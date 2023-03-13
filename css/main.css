@@ -1,0 +1,40 @@
+.avatar-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.avatar-img {
+  width: 100%;
+  height: auto;
+  max-width: 150px; /* maximum size of the avatar */
+  border-radius: 50%;
+  box-shadow: 0 0 0 4px #fff, 0 0 10px rgba(0,0,0,.1);
+}
+
+.timeline {
+  border-left: 1px solid hsl(0, 0%, 90%);
+  position: relative;
+  list-style: none;
+  left: 5px;
+}
+
+.timeline .timeline-item {
+  position: relative;
+}
+
+.timeline .timeline-item:after {
+  position: absolute;
+  display: block;
+  top: 0;
+}
+
+.timeline .timeline-item:after {
+  background-color: hsl(0, 0%, 90%);
+  left: -38px;
+  border-radius: 50%;
+  height: 11px;
+  width: 11px;
+  content: "";
+}
