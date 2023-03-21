@@ -13,8 +13,14 @@
   box-shadow: 0 0 0 4px #fff, 0 0 10px rgba(0,0,0,.1);
 }
 
+.main {
+  font: 15px Helvetica, Sans-Serif;
+  line-height: 24px;
+  background-color: #ceefe4;
+}
+
 .timeline {
-  border-left: 1px solid hsl(0, 0%, 90%);
+  border-left: 1px solid hsl(0, 50%, 90%);
   position: relative;
   list-style: none;
   left: 5px;
@@ -31,10 +37,11 @@
 }
 
 .timeline .timeline-item:after {
-  background-color: hsl(0, 0%, 90%);
+  background-color: hsl(0, 50%, 90%);
   left: -38px;
   border-radius: 50%;
   height: 11px;
   width: 11px;
   content: "";
 }
+

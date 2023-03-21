@@ -4,9 +4,11 @@
   <meta charset="utf-8">
   <title>Dmitry Markov CV</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" rel="stylesheet">
   <link rel="stylesheet" href="css/main.css">
+  <link rel="icon" type="image/png" href="img/favicon.png">
 </head>
-<body>
+<body class="main">
 <div class="container">
   <section class="contacts">
     <div class="row">
@@ -22,8 +24,10 @@
         <h5>Ruby on Rails developer</h5>
         <h6>Moscow, Russian Federation</h6>
         <h6><strong>Desired position: Ruby on Rails Developer</strong></h6>
-        <a href="https://www.linkedin.com/in/markovdmitry">LinkedIn</a>
-        <a href="https://github.com/madmol">GitHub</a>
+        <h4>
+          <a href="https://www.linkedin.com/in/markovdmitry" class="text-decoration-none text-dark p-2"><i class="bi bi-linkedin"></i></a>
+          <a href="https://github.com/madmol" class="text-decoration-none text-dark p-2"><i class="bi bi-github"></i></a>
+        </h4>
         <br>
         <br>
       </div>
@@ -31,32 +35,98 @@
     <div class="row">
       <div class="col-md-12">
         <h6>Contact preferences:</h6>
-          <ul>
-            <li><a href="mailto:markov.dm@inbox.ru">markov.dm@inbox.ru</a></li>
-            <li><a href="tel:+79265728493">+79265728493</a></li>
+          <ul class="list-unstyled">
+            <li class="mb-2"><a href="mailto:markov.dm@inbox.ru" class="text-decoration-none text-dark p-2"><i class="bi bi-envelope-fill me-2"></i>markov.dm@inbox.ru</a></li>
+            <li class="mb-2"><a href="tel:+79265728493" class="text-decoration-none text-dark p-2"><i class="bi bi-telephone-fill me-2"></i>+79265728493</a></li>
           </ul>
       </div>
     </div>
   </section>
   <section class="objective">
     <div class="row">
-      <div class="col-md-12">
-        <h4 class="my-2">Objective</h4>
-        <p>To obtain a position as a Ruby on Rails developer where I can contribute my technical skills, passion for coding, and enthusiasm for learning to develop innovative and high-quality web applications. I am seeking an opportunity to work with experienced developers to gain valuable experience and enhance my abilities in building scalable, maintainable, and robust applications using Ruby on Rails.</p>
+      <div class="col-md-2">
+        <h4 class="my-2">About me</h4>
+      </div>
+      <div class="col-md-10">
+        <p class="my-2">I fell in love with Ruby in March 2020, and since then, I have been passionate about programming and constantly studying new things. As a former hardware radioelectronic engineer, I bring a unique perspective to software development. Coding ignites a fire inside of me, and I am enthusiastic about learning and developing innovative, high-quality web applications. I am currently seeking an opportunity to work with experienced developers to enhance my skills and gain valuable experience in building scalable, maintainable, and robust applications using Ruby on Rails.</p>
       </div>
     </div>
   </section>
   <section class="skills">
     <div class="row">
-      <div class="col-md-12">
+      <div class="col-md-2">
         <h4 class="my-2">Tehcnical Skills</h4>
+      </div>
+      <div class="col-md-10">
+        <h5 class="my-2">Ruby on Rails</h5>
         <ul>
-          <li>Languages: Ruby, RSpec, Slim, JavaScript - basic, HTML/CSS, SQL - basic, bash</li>
-          <li>Technologies: Ruby on Rails, git, Gitlab</li>
-          <li>Databases: PostgreSQL</li>
-          <li>Gems: Device, Sidekiq, Pundit, Rufus, CarrierWave</li>
-          <li>Object-Oriented Programming</li>
-          <li>Platforms: Linux</li>
+          <li>Extensive knowledge of Object-Oriented Programming principles, CRUD, REST, and MVC architecture.</li>
+          <li>Expertise in using popular gems such as Device, Sidekiq, Pundit, Rufus, and CarrierWave to build robust and scalable applications.</li>
+          <li>Strong proficiency in writing clean and readable code with attention to code-style, ensuring maintainability and ease of collaboration.</li>
+          <li>Proficient in using irb/rails console to quickly experiment with new ideas and understand how methods work, or use it as a calculator for quick calculations.</li>
+          <li>Skilled in debugging and troubleshooting applications using Byebug gem for efficient and accurate error resolution.</li>
+          <li>Experienced in deploying applications on VPS with Capistrano, ensuring seamless and efficient deployment of applications to production environments.</li>
+          <li>Active usage of I18n for multilingual support, ensuring accessibility and inclusivity for a diverse user base.</li>
+          <li>Proficient in securely managing credentials for applications, including storing secrets in environment variables and using multi-environment credentials.</li>
+          <li><strong>RSpec</strong> - using popular testing framework, with the use of gems such as FactoryBot and Capybara, ensuring robust and reliable test coverage for applications.</li>
+          <li><strong>Active Record</strong> - validations, relationships between models, and migrations, ensuring data integrity and consistency.</li>
+          <li><strong>Active Mailer</strong> - using in educational app for sending emails via sendmail on VPS and using Letter Opener gem in development, ensuring efficient and reliable email delivery for applications.</li>
+          <li><strong>Active Job</strong> - sending emails, creating/updating/deleting virtual machines on oVirt, and configuring them with Foreman. Worked with Sidekiq, Resque backends, and NoSQL Redis, ensuring efficient and reliable background job processing for applications.</li>
+          <li><strong>Action Cable</strong> -  real-time communication between servers and clients for servers (VMs and bare-metal) statuses and OS deployment statuses.</li>
+          <li><strong>API</strong> - working with APIs such as oVirt, Foreman, and RedFish, ensuring seamless integration and communication between applications and external systems.</li>
+        </ul>
+        <h5 class="my-2">Databases</h5>
+        <ul>
+          <li>Proficient in managing databases such as PostgreSQL and MySQL</li>
+          <li>Able to write and maintain basic SQL queries</li>
+          <li>Experience configuring Redis (with Resque, Sidekiq) for email sending and other delayed jobs</li>
+        </ul>
+        <h5 class="my-2">Front-End</h5>
+        <ul>
+          <li>Skilled in creating responsive layouts using HTML, CSS, and Bootstrap</li>
+          <li>Basic knowledge of JS, CoffeeScript, and jQuery</li>
+        </ul>
+        <h5 class="my-2">DevOps</h5>
+        <ul>
+          <li>Proficient in deploying Ruby on Rails apps on Heroku and on VPS using Nginx and Phusion Passenger.</li>
+          <li>Experienced in setting up automated deployment scripts using Capistrano for continuous delivery. Familiar with Capistrano configuration files, task automation, and rollbacks.</li>
+          <li>Skilled in GitLab CI/CD pipelines, including setting up builds, testing, and deployment stages.</li>
+          <li>Familiar with Docker Compose CLI, Dockerfile syntax, and container orchestration.</li>
+        </ul>
+        <h5 class="my-2">Other competencies</h5>
+        <ul>
+          <li>Strong experience with Linux command line and bash, including using vim for text editing.</li>
+          <li>Understanding of network connectivity and HTTP principles, including IP addressing, routing, and RESTful API design.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+<section class="projects">
+    <div class="row">
+      <div class="col-md-2">
+        <h4 class="my-2">My Projects</h4>
+      </div>
+      <div class="col-md-10">
+        <h5 class="my-2">CLI Applications</h5>
+        <ul>
+          <li>Hangman (<a href="https://github.com/madmol/hangman">GitHub</a>) - A command-line interface (CLI) implementation of the famous puzzle game using basic Object-Oriented Programming (OOP) patterns and interface animations. The game is written in Ruby.
+            <p>[Ruby, Colorize gem, File Management]</p>
+          </li>
+          <li>Notepad (<a href="https://github.com/madmol/notepad">GitHub</a>) - A console application written in Ruby that emulates a mini notepad. It is designed to work on Ruby version 2.7.1 or higher and requires the installation of SQLite. Users can create a SQLite database by navigating to the unpacked notepad-master folder and following the instructions in the README file.
+            <p>[Ruby, SQLite]</p>
+          </li>
+        </ul>
+        <h5 class="my-2">Web Applications</h5>
+        <ul>
+          <li>BBQ (<a href="https://github.com/madmol/bbq">GitHub</a> | <a href="http://bbqer.ru">web</a>) - A web application that allows users to create and invite friends to various types of events such as BBQs, cinema nights, festivals, and more. Users can create events with descriptions, dates, and locations, and other users can subscribe to the event. The application includes features such as authorization and authentication with Devise and Pundit, OAuth integration with GitHub and Yandex, file downloading with Carrierwave, mail sending with ActionMailer and Sendmail, background task processing with ActiveJob, Resque, and Redis, and a Bootstrap4 layout for an improved user experience.
+            <p>[Ruby on Rails, Devise, Pundit, OAuth, Carrierwave, ActionMailer, Sendmail, ActiveJob, Resque, Redis, Bootstrap]</p>
+          </li>
+          <li>Instatalk (<a href="https://github.com/madmol/instatalk">GitHub</a>) - A simple anonymous chat web application built with Ruby on Rails that demonstrates how Rails works with websockets. Users can join a chat room and communicate with each other anonymously in real-time using websockets. The application includes features such as message broadcasting and message history, and it demonstrates the power of Rails in handling websockets and real-time communication.
+            <p>[Ruby on Rails, Websockets]</p>
+          </li>
+          <li>Opendata (<a href="https://github.com/madmol/opendata">GitHub</a>) - A simple web application built with Ruby on Rails that fetches open data from https://data.gov.ru via API and stores it in a database. Users can save data in a zip archive, which contains data in JSON format, and delete organization data from the same page. The application also includes the ability to reload the organizations list via API request, providing users with up-to-date information and making it easy to manage the data.
+            <p>[Ruby on Rails, API Integration, JSON, SLIM, Capybara, RSpec, Rubyzip, Kaminari]</p>
+          </li>
         </ul>
       </div>
     </div>
@@ -67,12 +137,14 @@
       <li class="timeline-item mb-4">
         <h6>March 2022 &mdash; Present</h6>
         <h6><strong>Ruby on Rails developer, Joint-Stock Company “Research Institute of Precision Instruments” (JSC “RI PI”), Moscow, Russia</strong></h6>
-        <p>Support and maintain of a long-developing web application. Integration via API with external services like oVirt, Foreman. Getting servers inventory information via Redfish API</p>
+        <p>As a Ruby on Rails developer I provided support and maintenance for a long-developing web application. I integrated the application with external services such as oVirt and Foreman via API (using background jobs with Sidekiq), and retrieved server inventory information using the Redfish API.</p>
+        <p>I implemented the Rufus scheduler to automate tasks such as cache cleaning, getting virtual machine statuses, and checking bare-metal server statuses via IPMI.</p>
       </li>
       <li class="timeline-item mb-4">
         <h6>July 2016 &mdash; March 2022</h6>
         <h6><strong>Hardware Systems Engineer, Synertech LLC (RSS, Airbus D&S, Tesat), Moscow, Russia</strong></h6>
         <p>Electronics and test engineering expertise with emphasis on system design, interface specification, modular design, validation, and testing procedures for RF, digital, and analogue systems.</p>
+        <p>Developed hardware systems for the GNSS, including designing and testing devices such as solid-state power amplifier. Collaborated with a team of engineers to ensure the successful integration of these devices into the overall system.</p>
       </li>
       <li class="timeline-item mb-4">
         <h6>February 2015 &mdash; July 2016</h6>
@@ -91,7 +163,7 @@
       <div class="col-md-12">
         <h4>Courses</h4>
         <h6>June 2020 &mdash; December 2020</h6>
-        <p><strong><a href="https://goodprogrammer.ru/rails">Good Programmer</a>, Ruby on Rails course</strong></p>
+        <p><strong>Good Programmer</strong>, <strong><a href="https://goodprogrammer.ru/rails">Ruby on Rails course</a></strong></p>
       </div>
     </div>
   </section>
